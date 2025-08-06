@@ -91,9 +91,9 @@ const cards = [
   { id: "B-090", label: "【2025/03/26】アイドルマスター TOURS 第1弾 [櫻木真乃]", checked: true },
   { id: "B-091", label: "【2025/03/26】アイドルマスター TOURS 第1弾 [風野灯織]", checked: true },
   { id: "B-092", label: "【2025/03/26】アイドルマスター TOURS 第1弾 [八宮めぐる]", checked: true },
-  { id: "B-093", label: "【2025/08/06】アイドルマスター TOURS 第2弾 [花海咲季]", checked: false },
-  { id: "B-094", label: "【2025/08/06】アイドルマスター TOURS 第2弾 [月村手毬]", checked: false },
-  { id: "B-095", label: "【2025/08/06】アイドルマスター TOURS 第2弾 [藤田ことね]", checked: false },
+  { id: "B-093", label: "【2025/08/06】アイドルマスター TOURS 第2弾 [花海咲季]", checked: true },
+  { id: "B-094", label: "【2025/08/06】アイドルマスター TOURS 第2弾 [月村手毬]", checked: true },
+  { id: "B-095", label: "【2025/08/06】アイドルマスター TOURS 第2弾 [藤田ことね]", checked: true },
 ];
 
 const list = document.getElementById("card-list");
