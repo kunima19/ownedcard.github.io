@@ -1,5 +1,5 @@
 const cards = [
-  { id: "LT2-001", label: "【IMT-LT2-001】 SSR / アテンダントツアラー [天海春香]", checked: false },
+  { id: "LT2-001", label: "【IMT-LT2-001】 SSR / アテンダントツアラー [天海春香]", checked: true },
   { id: "LT2-002", label: "【IMT-LT2-002】 SSR / アテンダントツアラー [天海春香]", checked: false },
   { id: "LT2-003", label: "【IMT-LT2-003】 SSR / アテンダントツアラー [島村卯月]", checked: false },
   { id: "LT2-004", label: "【IMT-LT2-004】 R / ディープワイヤード [風野灯織]", checked: true },

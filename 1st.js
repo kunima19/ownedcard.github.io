@@ -1,5 +1,5 @@
 const cards = [
-  { id: "01-001", label: "【IMT-01-001】 SSR / アテンダントツアラー [天海春香]", checked: false },
+  { id: "01-001", label: "【IMT-01-001】 SSR / アテンダントツアラー [天海春香]", checked: true },
   { id: "01-002", label: "【IMT-01-002】 SSR / アテンダントツアラー [天海春香]", checked: false },
   { id: "01-003", label: "【IMT-01-003】 SSR / アテンダントツアラー [島村卯月]", checked: false },
   { id: "01-004", label: "【IMT-01-004】 SSR / アテンダントツアラー [春日未来]", checked: false },
@@ -57,7 +57,7 @@ const cards = [
   { id: "01-056", label: "【IMT-01-056】 SR / glittering essence [星井美希]", checked: true },
   { id: "01-057", label: "【IMT-01-057】 SR / お腹ぺこぺこ～！ [伊吹翼]", checked: true },
   { id: "01-058", label: "【IMT-01-058】 SR / Road to venue [春日未来]", checked: true },
-  { id: "01-059", label: "【IMT-01-059】 SR / Dive into the sound [如月千早]", checked: false },
+  { id: "01-059", label: "【IMT-01-059】 SR / Dive into the sound [如月千早]", checked: true },
   { id: "01-060", label: "【IMT-01-060】 SR / 雨上がり、心も晴れ [風野灯織]", checked: true },
   { id: "01-061", label: "【IMT-01-061】 R / ブライトスマイル [島村卯月]", checked: true },
   { id: "01-062", label: "【IMT-01-062】 R / 二人だけのプライベートレッスン [如月千早]", checked: true },
