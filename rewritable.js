@@ -45,32 +45,40 @@ const cards = [
   { id: "R-044", label: "【2006/07/23】1stANNIVERSARY LIVE(チケット特典) [全員(赤背景+シルエット)]", checked: false },
   { id: "R-045", label: "【2007/04/01】ALL STAR LIVE 2007(チケット特典) [全員(緑背景+シルエット)]", checked: false },
   { id: "R-046", label: "【2019/08/01】namco中野店聖地化認定記念(筐体排出) [全員]", checked: false },
-
+  { id: "INFO-001", label: "ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー", noCheck: true},
+  { id: "R-047", label: "【2008/02/28】L4U!新曲ダウンロードカード", checked: false },
+  { id: "INFO-002", label: "ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー", noCheck: true},
+  { id: "R-048", label: "【2008/02/28】3500マイクロソフトポイント THEIDOLM@STER 限定バージョン<A> [全員(顔+白背景)]", checked: false },
+  { id: "R-049", label: "【2008/02/28】3500マイクロソフトポイント THEIDOLM@STER 限定バージョン<B> [全員(全身+青背景)]", checked: false },
+  { id: "R-050", label: "【2009/04/23】3500マイクロソフトポイント THEIDOLM@STER 限定バージョン<C> [全員(全身+白背景)]", checked: false },
+  { id: "R-051", label: "【2009/04/23】3500マイクロソフトポイント THEIDOLM@STER 限定バージョン<D> [全員(顔+黒背景)]", checked: false },
+  { id: "INFO-003", label: "ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー", noCheck: true},
+  { id: "R-052", label: "【2009/03/04】アイドルマスターブレイク!付録 DLCカード[衣装:ブルークロスピュア]", checked: false },
+  { id: "R-053", label: "【2009/03/04】アイドルマスターブレイク!付録 DLCカード[HANDアクセサリー:だっこネコ]", checked: false },
 ];
 
 const list = document.getElementById("card-list");
-
 cards.forEach(card => {
   const li = document.createElement("li");
   const label = document.createElement("label");
-  const checkbox = document.createElement("input");
-  checkbox.type = "checkbox";
-  checkbox.id = card.id;
-  checkbox.disabled = true;
-  checkbox.checked = card.checked;
-
+  let checkbox;
+  if(!card.noCheck){
+    checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.id = card.id;
+    checkbox.disabled = true;
+    checkbox.checked = card.checked;
+    label.appendChild(checkbox);
+  }
   const span = document.createElement("span");
   span.textContent = card.label;
-
-  label.appendChild(checkbox);
   label.appendChild(span);
   li.appendChild(label);
   list.appendChild(li);
 });
 
-const checkedCount = cards.filter(card => card.checked).length;
-const totalCount = cards.length;
-
+const checkedCount = cards.filter(card => card.checked && !card.noCheck).length;
+const totalCount = cards.filter(card => !card.noCheck).length;
 const resultText = `${checkedCount}/${totalCount}`;
 const resultElement = document.createElement("div");
 resultElement.id = "card-count";
