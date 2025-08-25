@@ -34,7 +34,7 @@ const cards = [
   { id: "R-033", label: "【2005/11/30】MASTERPIECE03(CD初回特典) [水瀬伊織・双海亜美・双海真美・高槻やよい]", checked: false },
   { id: "R-034", label: "【2006/03/22】MASTERPIECE04(CD初回特典) [全員]", checked: false },
   { id: "R-035", label: "【2006/05/31】MASTERPIECE05(CD初回特典) [全員]", checked: false },
-  { id: "R-036", label: "【2006/07/19】MASTER BOX(一部店舗CD特典) [全員(筐体イラスト)]", checked: false },
+  { id: "R-036", label: "【2006/07/19】MASTER BOX(一部店舗CD特典) [全員(筐体イラスト)]", checked: true },
   { id: "R-037", label: "【2006/08/11】SHINING STAR TORIKO コミケ70(CD特典) [天海春香・如月千早・萩原雪歩]", checked: false },
   { id: "R-038", label: "【2005/08/19】PREMIUM KIT(書籍特典) [全員(紫背景)]", checked: true },
   { id: "R-039", label: "【2005/08/19】PREMIUM KIT(書籍特典) [全員(黒枠)]", checked: true },
@@ -53,8 +53,8 @@ const cards = [
   { id: "R-050", label: "【2009/04/23】3500マイクロソフトポイント THEIDOLM@STER 限定バージョン<C> [全員(全身+白背景)]", checked: false },
   { id: "R-051", label: "【2009/04/23】3500マイクロソフトポイント THEIDOLM@STER 限定バージョン<D> [全員(顔+黒背景)]", checked: false },
   { id: "INFO-003", label: "ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー", noCheck: true},
-  { id: "R-052", label: "【2009/03/04】アイドルマスターブレイク!付録 DLCカード[衣装:ブルークロスピュア]", checked: false },
-  { id: "R-053", label: "【2009/03/04】アイドルマスターブレイク!付録 DLCカード[HANDアクセサリー:だっこネコ]", checked: false },
+  { id: "R-052", label: "【2009/03/04】アイドルマスターブレイク!付録 DLCカード[衣装:ブルークロスピュア]", checked: true },
+  { id: "R-053", label: "【2009/03/04】アイドルマスターブレイク!付録 DLCカード[HANDアクセサリー:だっこネコ]", checked: true },
 ];
 
 const list = document.getElementById("card-list");
