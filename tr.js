@@ -11,6 +11,25 @@ const cards = [
   { id: "TR-01-010", label: "【IMT-TR-01-010】 TR / special art #01-03", checked: true },
   { id: "TR-01-011", label: "【IMT-TR-01-011】 TR / special art #01-04", checked: true },
   { id: "TR-01-012", label: "【IMT-TR-01-012】 TR / special art #01-05", checked: true },
+  { id: "INFO-001", label: "ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー", noCheck: true},
+  { id: "TR-02-001", label: "【IMT-TR-02-001】 TR / 天海春香", checked: false },
+  { id: "TR-02-002", label: "【IMT-TR-02-002】 TR / 如月千早", checked: false },
+  { id: "TR-02-003", label: "【IMT-TR-02-003】 TR / 星井美希", checked: false },
+  { id: "TR-02-004", label: "【IMT-TR-02-004】 TR / 島村卯月", checked: false },
+  { id: "TR-02-005", label: "【IMT-TR-02-005】 TR / 渋谷凛", checked: false },
+  { id: "TR-02-006", label: "【IMT-TR-02-006】 TR / 本田未央", checked: false },
+  { id: "TR-02-007", label: "【IMT-TR-02-007】 TR / 春日未来", checked: false },
+  { id: "TR-02-008", label: "【IMT-TR-02-008】 TR / 最上静香", checked: false },
+  { id: "TR-02-009", label: "【IMT-TR-02-009】 TR / 伊吹翼", checked: false },
+  { id: "TR-02-010", label: "【IMT-TR-02-010】 TR / 天道輝", checked: false },
+  { id: "TR-02-011", label: "【IMT-TR-02-011】 TR / 桜庭薫", checked: false },
+  { id: "TR-02-012", label: "【IMT-TR-02-012】 TR / 柏木翼", checked: false },
+  { id: "TR-02-013", label: "【IMT-TR-02-013】 TR / 櫻木真乃", checked: false },
+  { id: "TR-02-014", label: "【IMT-TR-02-014】 TR / 風野灯織", checked: false },
+  { id: "TR-02-015", label: "【IMT-TR-02-015】 TR / 八宮めぐる", checked: false },
+  { id: "TR-02-016", label: "【IMT-TR-02-016】 TR / 花海咲季", checked: false },
+  { id: "TR-02-017", label: "【IMT-TR-02-017】 TR / 月村手毬", checked: false },
+  { id: "TR-02-018", label: "【IMT-TR-02-018】 TR / 藤田ことね", checked: false },
 ];
 
 const list = document.getElementById("card-list");
@@ -18,23 +37,25 @@ const list = document.getElementById("card-list");
 cards.forEach(card => {
   const li = document.createElement("li");
   const label = document.createElement("label");
-  const checkbox = document.createElement("input");
-  checkbox.type = "checkbox";
-  checkbox.id = card.id;
-  checkbox.disabled = true;
-  checkbox.checked = card.checked;
+
+  if (!card.noCheck) {
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.id = card.id;
+    checkbox.disabled = true;
+    checkbox.checked = card.checked;
+    label.appendChild(checkbox);
+  }
 
   const span = document.createElement("span");
   span.textContent = card.label;
-
-  label.appendChild(checkbox);
   label.appendChild(span);
   li.appendChild(label);
   list.appendChild(li);
 });
 
-const checkedCount = cards.filter(card => card.checked).length;
-const totalCount = cards.length;
+const checkedCount = cards.filter(card => card.checked && !card.noCheck).length;
+const totalCount = cards.filter(card => !card.noCheck).length;
 
 const resultText = `${checkedCount}/${totalCount}`;
 const resultElement = document.createElement("div");
