@@ -50,7 +50,7 @@ const cards = [
   { id: "INFO-002", label: "ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー", noCheck: true},
   { id: "R-048", label: "【2008/02/28】3500マイクロソフトポイント THEIDOLM@STER 限定バージョン<A> [全員(顔+白背景)]", checked: false },
   { id: "R-049", label: "【2008/02/28】3500マイクロソフトポイント THEIDOLM@STER 限定バージョン<B> [全員(全身+青背景)]", checked: false },
-  { id: "R-050", label: "【2009/04/23】3500マイクロソフトポイント THEIDOLM@STER 限定バージョン<C> [全員(全身+白背景)]", checked: false },
+  { id: "R-050", label: "【2009/04/23】3500マイクロソフトポイント THEIDOLM@STER 限定バージョン<C> [全員(全身+白背景)]", checked: true },
   { id: "R-051", label: "【2009/04/23】3500マイクロソフトポイント THEIDOLM@STER 限定バージョン<D> [全員(顔+黒背景)]", checked: false },
   { id: "INFO-003", label: "ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー", noCheck: true},
   { id: "R-052", label: "【2009/03/04】アイドルマスターブレイク!付録 DLCカード[衣装:ブルークロスピュア]", checked: true },
