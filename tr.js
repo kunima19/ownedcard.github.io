@@ -11,7 +11,7 @@ const cards = [
   { id: "TR-01-010", label: "【IMT-TR-01-010】 TR / special art #01-03", checked: true },
   { id: "TR-01-011", label: "【IMT-TR-01-011】 TR / special art #01-04", checked: true },
   { id: "TR-01-012", label: "【IMT-TR-01-012】 TR / special art #01-05", checked: true },
-  { id: "INFO-001", label: "ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー", noCheck: true},
+  { id: "INFO-001", label: "ーーーーーーーーーーーーーーーーーーーーーーーー", noCheck: true},
   { id: "TR-02-001", label: "【IMT-TR-02-001】 TR / 天海春香", checked: true },
   { id: "TR-02-002", label: "【IMT-TR-02-002】 TR / 如月千早", checked: true },
   { id: "TR-02-003", label: "【IMT-TR-02-003】 TR / 星井美希", checked: true },
