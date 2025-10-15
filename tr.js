@@ -30,6 +30,16 @@ const cards = [
   { id: "TR-02-016", label: "【IMT-TR-02-016】 TR / 花海咲季", checked: true },
   { id: "TR-02-017", label: "【IMT-TR-02-017】 TR / 月村手毬", checked: true },
   { id: "TR-02-018", label: "【IMT-TR-02-018】 TR / 藤田ことね", checked: true },
+  { id: "TR-02-019", label: "【IMT-TR-02-019】 TR / event1 EP1", checked: false },
+  { id: "TR-02-020", label: "【IMT-TR-02-020】 TR / event1 EP2", checked: false },
+  { id: "TR-02-021", label: "【IMT-TR-02-021】 TR / event1 EP3", checked: false },
+  { id: "TR-02-022", label: "【IMT-TR-02-022】 TR / event1 EP4", checked: false },
+  { id: "TR-02-023", label: "【IMT-TR-02-023】 TR / event1 EP6", checked: false },
+  { id: "TR-02-024", label: "【IMT-TR-02-024】 TR / special art #02-01", checked: false },
+  { id: "TR-02-025", label: "【IMT-TR-02-025】 TR / special art #02-02", checked: false },
+  { id: "TR-02-026", label: "【IMT-TR-02-026】 TR / special art #02-03", checked: false },
+  { id: "TR-02-027", label: "【IMT-TR-02-027】 TR / special art #02-04", checked: false },
+  { id: "TR-02-028", label: "【IMT-TR-02-028】 TR / special art #02-05", checked: false },
 ];
 
 const list = document.getElementById("card-list");
